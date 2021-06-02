@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin : 밖여백</title>
+<style type="text/css">
+	div{border: 1px solid black;}
+	.box1{background-color: skyblue; text-align: center; margin: 0px;}
+	div.box2{background-color: silver; width: 200px; text-align: center; margin :10px auto;}
+	/*좌우가 auto이면 가운데 정렬이 된다.*/
+	div#box3{background-color: skyblue; width: 200px; height: 70px;text-align: center; margin :10px auto;
+	overflow: hidden;/*주석처리하면 box4가 밖으로 튀어나온다.-> 영역을 벗어난 자식 숨기기*/
+	}
+	p.box4{background-color: silver; width: 500px; text-align: center; margin :10px auto;}
+	/*좌우가 auto이면 가운데 정렬이 된다.*/
+	
+</style>
+</head>
+<body>
+	<!-- margin: 숫자					 : 전체
+		magin : 숫자1 숫자2				 : 상하 좌우
+		margin : 숫자1 숫자2 숫자3 숫자4 : 상 우 하 좌 (시계방향)
+	 -->
+	 <h2>margin연습</h2>
+	 <p >margin연습</p>
+	 <div class="box1">margin연습</div>
+	 <div class="box2">margin연습</div>
+	 <div id="box3">margin 연습 margin연습 margin연습 margin연습 margin연습 margin연습 margin연습
+	 <p class="box4">              margin연습             </p>
+	 </div>
+</body>
+</html>

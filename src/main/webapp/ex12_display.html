@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display</title>
+<style type="text/css">
+	div#box1{
+		background-color: lightgreen;
+		border: 2px solid green;
+		width: 300px;
+		height: 50px;
+		line-height: 50px;
+		box-sizing: border-box;
+		text-align: center;
+		
+	}
+	div#box2{
+		background-color: green;
+		width: 300px;
+		height: 80px;
+		box-sizing: border-box;
+		text-align: center;
+		display: none;
+		
+	}
+	
+</style>
+<script type="text/javascript">
+	function show() {
+		document.getElementById("box2").style.display="block";
+	}
+</script>
+</head>
+<body>
+	<!-- 화면제어를 위한 중요한 속성 -->
+	<!-- display는 block, inline, table, inline-block
+		display:none은 영역자체가 사라진다.
+		visiblity:hidden은 영역이 그대로 남아있는다.
+	 -->
+	<div id="box1" onclick="show()"><a>아래 div를 보려면 hover하세요</a></div>
+	<div id="box2">
+		<p>해당 div를 숨기려면 display:none</p>
+		<p>해당 div를 보이려면 display:block</p>
+	</div>
+</body>
+</html>
